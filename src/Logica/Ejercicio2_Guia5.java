@@ -15,7 +15,7 @@
 package Logica;
 
 import java.util.ArrayList;
-import java.sql.*;
+import java.sql.*;//siempre importar la libreria de SQL
 import java.util.Scanner;
 
 
@@ -52,7 +52,7 @@ public class Ejercicio2_Guia5 {
                     l1.crearLavadora();//se crea el objeto
                     lista.add(l1);//se agrega a un array (para este ejercicio puntual)
                     //el query es la consulta para hacerle al BD
-                    // el insert to es para agregar datos desde netbeans porque es sintaxis enbebida en java
+                    // el insert to es para agregar datos desde netbeans porque es sintaxis embebida en java
                     // en formato string agregar el nombre de la tabla con sus columnas
                     // y para agregar los valores, se pueden setear a mano, o en este caso, atravez del objeto con getters
                     String query = "INSERT INTO lavadora (precio, color, consumo, peso, carga) VALUES ('" + l1.precioFinal() + "','" + l1.getColor() + "','" + l1.getConsumo() + "','" + l1.getPeso() + "','" + l1.getCarga() + "')";
